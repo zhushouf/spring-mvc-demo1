@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>员工明细页</title>
+<title>考勤信息添加</title>
 </head>
 <body>
 	

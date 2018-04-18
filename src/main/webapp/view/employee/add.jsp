@@ -1,11 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta charset="UTF-8">
-<title>员工信息编辑</title>
+<title>员工信息添加</title>
 </head>
 <script type="text/javascript">
 	function dialogAjaxDone(response) {
@@ -20,27 +18,27 @@
 			<div class="pageFormContent" layoutH="58">
 				<div class="unit">
 					<label>员工ID：</label>
-					<input type="text" name="id" size="30" class="required" value="${employee.id}" />
+					<input type="text" name="id" size="30" class="required" />
 				</div>
 				<div class="unit">
 					<label>员工姓名：</label>
-					<input type="text" name="name" size="30" class="required" value="${employee.name}" />
+					<input type="text" name="name" size="30" class="required"/>
 				</div>
 				<div class="unit">
 					<label>性别：</label>
 					<select class="combox" name="gender" class="required">
 						<option value="0">请选择</option>
-						<option value="1" <c:if test="${item.gender eq 1}">selected</c:if>>男</option>
+						<option value="1">男</option>
 						<option value="2">女</option>
 					</select>
 				</div>
 				<div class="unit">
 					<label>联系电话：</label>
-					<input type="text" name="phone" size="30" class="required" value="${employee.phone}" />
+					<input type="text" name="phone" size="30" class="required"/>
 				</div>
 				<div class="unit">
 					<label>出生日期：</label>
-					<input type="text" name="birthday" size="30" class="required" value="<fmt:formatDate value="${employee.birthday}" pattern="yyyy-MM-dd" />"/>
+					<input type="text" name="birthday" size="30" class="required"/>
 				</div>
 			</div>
 			<div class="formBar">
